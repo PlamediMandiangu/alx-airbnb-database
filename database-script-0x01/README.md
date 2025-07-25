@@ -1,58 +1,20 @@
-\# Airbnb Clone: Database Schema
+# Seed Data for Airbnb Clone Database
 
+This script populates the database with realistic sample data for testing.
 
+## Tables Seeded
 
-This directory contains the SQL schema for the Airbnb-like platform database.
+- **User**: 3 users (1 host, 2 guests)
+- **Property**: 2 properties listed by the host
+- **Booking**: 2 bookings by guests
+- **Payment**: 2 sample payments
+- **Review**: Each property has a review
+- **Message**: Users exchange sample messages
 
+## Usage
 
+Run `seed.sql` after creating the schema:
 
-\## Files
-
-
-
-\- `schema.sql`: Defines the database tables, constraints, and indexes.
-
-\- `README.md`: Describes the schema and design rationale.
-
-
-
-\## Tables
-
-
-
-\- \*\*User\*\*: Stores user info (hosts and guests)
-
-\- \*\*Property\*\*: Properties listed by hosts
-
-\- \*\*Booking\*\*: Reservations made by users
-
-\- \*\*Payment\*\*: Payments for bookings
-
-\- \*\*Review\*\*: User reviews of properties
-
-\- \*\*Message\*\*: Messages exchanged between users
-
-
-
-\## Design Principles
-
-
-
-\- All tables use `SERIAL` for auto-incremented primary keys.
-
-\- Foreign keys enforce data integrity.
-
-\- Indexes added on frequently queried fields for performance.
-
-\- Columns include timestamps for tracking creation.
-
-
-
-\## Normalization
-
-
-
-The database is normalized up to \*\*3NF\*\*, ensuring no redundancy and optimal data integrity.
-
-
-
+```bash
+psql -U your_user -d your_database -f schema.sql
+psql -U your_user -d your_database -f seed.sql
