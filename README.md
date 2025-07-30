@@ -1,26 +1,10 @@
-\# ALX Airbnb Project Documentation
+# SQL JOIN Queries
 
+This file contains the following SQL JOIN queries used in the Airbnb database project:
 
+1. INNER JOIN – to retrieve all bookings and the users who made them.
+2. LEFT JOIN – to retrieve all properties and their reviews, including those with no reviews.
+3. FULL OUTER JOIN – to retrieve all users and bookings, even if not linked.
 
-This repository contains design documentation and artifacts for the ALX Airbnb Clone project.  
-
-It includes Entity-Relationship Diagrams (ERDs), feature definitions, database schemas, and functional specifications.
-
-
-
-\## Folder Structure
-
-
-
-\- `features-and-functionalities/`: Contains ER diagrams and project feature breakdowns.
-
-
-
-\## Author
-
-
-
-Plamedi Mandiangu
-
-
+File: joins_queries.sql
 
