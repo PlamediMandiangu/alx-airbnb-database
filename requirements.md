@@ -2,31 +2,61 @@
 
 
 
-\## 1. User Authentication
+This document defines the technical and functional requirements for the core backend features of the Airbnb Clone project, including User Authentication, Property Management, and Booking System.
 
 
 
-\### Functional Description
-
-Allows users (hosts/guests) to register, log in, and manage sessions securely using JWT.
+\## User Authentication
 
 
 
-\### API Endpoints
+Enables both guests and hosts to register, log in, and manage sessions securely using JSON Web Tokens (JWT).
 
-\- `POST /api/register`  
 
-\- `POST /api/login`  
+
+\*\*API Endpoints:\*\*
+
+\- `POST /api/register`
+
+\- `POST /api/login`
 
 \- `GET /api/logout`
 
 
 
-\### Input/Output
+\## Property Management
 
-\*\*Register\*\*  
 
-Request:
+
+Allows hosts to create and manage property listings.
+
+
+
+\*\*API Endpoints:\*\*
+
+\- `POST /api/properties`
+
+
+
+\## Booking System
+
+
+
+Allows users to book listed properties.
+
+
+
+\*\*API Endpoints:\*\*
+
+\- `POST /api/bookings`
+
+
+
+\## Example Combined Flow
+
+
+
+\### 🔐 Registration Request
 
 ```json
 
@@ -38,7 +68,13 @@ Request:
 
 }
 
+```
 
+
+
+\### ✅ Registration Response
+
+```json
 
 {
 
@@ -48,7 +84,59 @@ Request:
 
 }
 
+```
 
+
+
+\### 🔐 Login Request
+
+```json
+
+{
+
+&nbsp; "email": "user@example.com",
+
+&nbsp; "password": "securePassword123"
+
+}
+
+```
+
+
+
+\### ✅ Login Response
+
+```json
+
+{
+
+&nbsp; "message": "Login successful",
+
+&nbsp; "token": "JWT\_TOKEN"
+
+}
+
+```
+
+
+
+\### 🚪 Logout Response
+
+```json
+
+{
+
+&nbsp; "message": "Logout successful"
+
+}
+
+```
+
+
+
+\### 🏡 Property Listing Request
+
+```json
 
 {
 
@@ -62,7 +150,13 @@ Request:
 
 }
 
+```
 
+
+
+\### ✅ Property Listing Response
+
+```json
 
 {
 
@@ -72,7 +166,13 @@ Request:
 
 }
 
+```
 
+
+
+\### 📆 Booking Request
+
+```json
 
 {
 
@@ -86,7 +186,13 @@ Request:
 
 }
 
+```
 
+
+
+\### ✅ Booking Response
+
+```json
 
 {
 
@@ -95,4 +201,8 @@ Request:
 &nbsp; "booking\_id": 304
 
 }
+
+```
+
+
 
