@@ -1,28 +1,16 @@
-\# Join Queries - Airbnb Database
+\# SQL Join Queries
 
 
 
-This project demonstrates SQL JOIN queries for the Airbnb Clone database.
+This directory contains SQL scripts demonstrating various types of joins:
 
 
 
-\## Queries
+\- `INNER JOIN`: Retrieve bookings along with their users.
 
+\- `LEFT JOIN`: Retrieve properties and their reviews, even if a property has no review.
 
-
-1\. \*\*INNER JOIN\*\*: Fetches bookings and the users who made them.
-
-2\. \*\*LEFT JOIN\*\*: Fetches all properties and their reviews, including those with no reviews.
-
-3\. \*\*FULL OUTER JOIN\*\*: Lists all users and all bookings, even unlinked ones.
-
-
-
-\## Files
-
-
-
-\- `joins\_queries.sql`: Contains all the SQL JOIN statements.
+\- `FULL OUTER JOIN`: Retrieve all users and bookings, including unmatched records.
 
 
 
