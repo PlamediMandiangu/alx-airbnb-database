@@ -2,6 +2,26 @@
 
 
 
+\# Advanced SQL Join Queries
+
+
+
+This directory contains SQL queries using INNER JOIN, LEFT JOIN, and FULL OUTER JOIN to solve Airbnb database tasks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This directory contains SQL scripts demonstrating various types of joins:
 
 
